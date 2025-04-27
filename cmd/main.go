@@ -3,23 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Salve!!!!")
+	var nome string = "Gabriel"
+	var idade int = 21
 
-	variaveis()
-	funcoes()
-}
+	var (
+		peso float64 = 72.5
+		altura int = 184
+	)
 
-func variaveis() {
-	var nome string = "Go"
-	versao := 1.24
-	fmt.Println("Aprendendo", nome, "(versão", versao, ")") 
-}
+	fmt.Printf("%s tem %d anos, pesa %.1fkg e mede %dcm\n", nome, idade, peso, altura)
 
-func funcoes() {
-	resultado := soma(5, 3)
-	fmt.Println("5 + 3 =", resultado)
-}
-
-func soma(a, b int) int {
-	return a + b
 }
